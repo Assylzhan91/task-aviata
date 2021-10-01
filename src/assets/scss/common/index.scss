@@ -4,6 +4,8 @@ body {
   padding: 0;
   height: 100vh;
   min-width: 320px;
+  background-color: $grey;
+  font-family: Arial, sans-serif;
 }
 
 * {
@@ -19,7 +21,6 @@ p {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: 'Roboto', sans-serif;
 }
 
 button {
