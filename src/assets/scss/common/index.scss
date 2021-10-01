@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-width: 320px;
+}
+
+* {
+  box-sizing: border-box;
+}
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  outline: none;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  margin: auto;
+}

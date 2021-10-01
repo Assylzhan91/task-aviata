@@ -1,32 +1,33 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<v-layout>
+		<template #header>
+			<v-header/>
+		</template>
+		<template #search>
+			<v-search/>
+		</template>
+		<template #main>
+			<v-main/>
+		</template>
+	</v-layout>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import VLayout from "@/components/VLayout";
+import VHeader from "@/components/VHeader";
+import VSearch from "@/components/VSearch";
+import VMain from "@/components/VMain";
 
-#nav {
-  padding: 30px;
+export default {
+  name: 'App',
+	components: {
+    VLayout,
+    VHeader,
+    VSearch,
+    VMain
+	},
+  props: {
+    msg: String
+  }
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
