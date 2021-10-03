@@ -6,18 +6,18 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'getListAirlines',
-      'getUniqueAirlines'
-    ]),
+      'setFilteredFlights',
+      'getUniqueAirlines',
+      'getCheckedAllAirlines',
+    ])
   },
   methods: {
     ...mapActions([
-      'setFilteredFlightsAction'
+      'setFilteredFlightsAction',
+      'checkAllAction'
     ]),
-    checkedHandler(key) {
-      console.log(key)
-      // this.$forceUpdate()
-      this.setFilteredFlightsAction(key)
+    checkedHandler(val_carrier) {
+      this.setFilteredFlightsAction(val_carrier)
     }
   },
 

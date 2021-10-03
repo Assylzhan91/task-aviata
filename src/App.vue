@@ -3,9 +3,6 @@
 		<template #header>
 			<v-header/>
 		</template>
-		<template #search>
-			<v-search/>
-		</template>
 		<template #main>
 			<v-main/>
 		</template>
