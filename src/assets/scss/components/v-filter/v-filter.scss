@@ -1,0 +1,51 @@
+.v-filter {
+  &--wrapper {
+    width: 100%;
+    margin-bottom: 12px;
+    background-color: $grey;
+    border-radius: 4px;
+  }
+
+  &__block {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    padding-left: 12px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 7px;
+
+    &:hover {
+      background-color: #c0c0c0;
+    }
+  }
+
+  &__checkbox {
+    width: 12px;
+    height: 12px;
+    background-image: url("../images/icons/checkbox.svg");
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &.active {
+      background-image: url("../images/icons/checbox_active.svg");
+    }
+  }
+
+  &__label {
+    font-size: 12px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 12px;
+  }
+
+}

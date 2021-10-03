@@ -4,8 +4,8 @@ body {
   padding: 0;
   height: 100vh;
   min-width: 320px;
-  background-color: $grey;
-  font-family: Arial, sans-serif;
+  background-color: $grey2;
+  font-family: Arial, "Open Sans", sans-serif;
 }
 
 * {
@@ -36,7 +36,7 @@ a {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1200px;
   padding-left: 30px;
   padding-right: 30px;
   width: 100%;

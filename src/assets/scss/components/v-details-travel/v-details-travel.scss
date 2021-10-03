@@ -1,0 +1,41 @@
+.v-details-travel {
+  display: flex;
+  &__btn {
+    &--detail {
+      width: 130px;
+      margin-right: 10px;
+    }
+    &--condition {
+    }
+    .text {
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: lighter;
+      color: $blue1;
+      border-bottom: 1px dashed $blue1;
+      &:hover {
+        color: darken($blue1, 20%);
+      }
+    }
+  }
+  &__type {
+    width: 172px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      width: 16px;
+      height: 16px;
+      background-image: url("../images/icons/icon-non-refundeble.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 7px;
+    }
+
+    .text {
+      font-size: 12px;
+      line-height: 14px;
+      color: $dark;
+    }
+  }
+}

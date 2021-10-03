@@ -1,0 +1,83 @@
+.v-buy-ticket {
+
+  &--wrapper {
+    width: 240px;
+    padding: 15px 20px;
+    background-color: $grey-dark4;
+    border-radius: 0 4px 4px 0;
+    overflow: hidden;
+  }
+
+  &__price,
+  &__desc {
+    text-align: center;
+  }
+
+  &__price {
+  font-weight: 100;
+  margin-bottom: 13px;
+    .price {
+      font-size: 26px;
+      line-height: 29px;
+    }
+  }
+
+  &__currency {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__button {
+    background-color: $green2;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    transition: background-color .2s;
+    &:hover {
+      background-color: darken($green2, 10%);
+    }
+    * {
+      font-size: 18px;
+      line-height: 25px;
+      font-family: "Open Sans";
+      font-weight: bold;
+    }
+  }
+
+  &__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $dark;
+    margin-bottom: 12px;
+  }
+
+  &__baggage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text {
+      font-size: 12px;
+    }
+  }
+  &__add-baggage {
+    width: 128px;
+    height: 24px;
+    background-color: $light-blue1;
+    transition: background-color .2s;
+    &:hover {
+      background-color: lighten($light-blue1, 10%);
+    }
+    * {
+      font-size: 12px;
+      line-height: 24px;
+      color: #5763B3 !important;
+      text-align: center;
+      font-family: "Open Sans";
+      font-weight: 600;
+
+    }
+  }
+}

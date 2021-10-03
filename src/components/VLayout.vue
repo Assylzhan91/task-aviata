@@ -5,20 +5,17 @@
 				<slot name="header"></slot>
 			</div>
 		</header>
-		<main class="container">
-			<slot name="search"></slot>
-		</main>
 		<div class="container">
-			<slot name="main"></slot>
+			<slot name="search"></slot>
 		</div>
+		<main class="container">
+			<slot name="main"></slot>
+		</main>
   </div>
 </template>
 
 <script>
 export default {
   name: 'VLayout',
-  props: {
-    msg: String
-  }
 }
 </script>

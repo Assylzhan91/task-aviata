@@ -1,0 +1,14 @@
+.v-main {
+  display: flex;
+
+  &__left {
+    width: 240px;
+    margin-right: 20px;
+  }
+  &__right {
+    flex-grow: 1;
+    &-wrapper {
+      display: flex;
+    }
+  }
+}
