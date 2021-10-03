@@ -22,7 +22,8 @@ export default {
   },
   methods: {
     ...mapActions([
-      'setFlightsAction'
+      'setFlightsAction',
+      'resetHandlerAction'
     ])
   },
   mounted() {

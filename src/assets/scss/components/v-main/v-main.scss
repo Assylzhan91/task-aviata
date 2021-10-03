@@ -11,4 +11,9 @@
       display: flex;
     }
   }
+
+  &__reset-btn {
+    color: $blue1;
+    border-bottom: 1px dashed $blue1;
+  }
 }

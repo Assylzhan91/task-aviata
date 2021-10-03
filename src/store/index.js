@@ -39,6 +39,12 @@ export default new Vuex.Store({
     }
   },
   mutations: {
+    resetHandler(state){
+      state.checkedAllAirlines = true
+      state.flights.map(item => {
+        item.isChecked = true
+      })
+    },
     setFlights (state) {
       state.flights = flights.map(item => {
         let { itineraries } = item
@@ -91,6 +97,9 @@ export default new Vuex.Store({
     },
     checkAllAction ({commit, getters}) {
       commit('checkAll', {getters})
+    },
+    resetHandlerAction ({commit}) {
+      commit('resetHandler')
     },
   },
   modules: {

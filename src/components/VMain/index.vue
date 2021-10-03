@@ -4,6 +4,7 @@
 			<v-filter
 				title="Авиакомпании"
 			/>
+			<button class="v-main__reset-btn" @click="resetHandlerAction">Сбросить все фильтры</button>
 		</div>
 		<div class="v-main__right">
 			<div
