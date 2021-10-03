@@ -5,17 +5,24 @@
 				<h4 class="v-filter__title">{{ title }}</h4>
 				<div class="v-filter__options">
 					<ul class="v-filter__list">
-						<li class="v-filter__item" >
-							<span class="v-filter__checkbox"></span>
+						<li class="v-filter__item" @click="checkAllAction">
+							<span
+								class="v-filter__checkbox"
+								:class="{active: getCheckedAllAirlines}"
+							></span>
 							<strong class="v-filter__label">Все</strong>
 						</li>
 						<li
 							class="v-filter__item"
-							v-for="(airline, key) of getListAirlines"
-							@click="checkedHandler(key)"
+							v-for="airline of setFilteredFlights"
+							:key="airline.id"
+							@click="checkedHandler(airline.validating_carrier)"
 						>
-							<span class="v-filter__checkbox"></span>
-							<strong class="v-filter__label">{{ airline }}</strong>
+							<span
+								class="v-filter__checkbox"
+								:class="{active: airline.isChecked}"
+							></span>
+							<strong class="v-filter__label">{{ airline.titleAirline }}</strong>
 						</li>
 					</ul>
 				</div>
